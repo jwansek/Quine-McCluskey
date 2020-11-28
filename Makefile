@@ -1,5 +1,5 @@
-./quineMcCluskey : qm.c
-	gcc qm.c -o ./quineMcCluskey
+./quineMcCluskey : src/qm.c
+	gcc src/qm.c -o ./quineMcCluskey
 
 clean :
 	rm -f ./quineMcCluskey
