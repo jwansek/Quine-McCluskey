@@ -13,6 +13,8 @@ int main(int argc, char* argv[]) {
     }
 
     DNF startDNF = parseDNFStr(argv[1]);
+    printForm(&startDNF);
+    printForm2(&startDNF);
     SimplifiedTableItem simplifiedTable[startDNF.numTerms];
     unsigned int simplifiedTableLength = startDNF.numTerms;
     setupMergeTable(simplifiedTable, &startDNF);
